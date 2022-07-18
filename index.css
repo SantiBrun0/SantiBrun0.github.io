@@ -7,9 +7,43 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
+html {
+  animation: overflow-x-hidden 18s 0.1s 1 forwards;
 }
+
+body {
+  animation: overflow-hidden 18s 0.1s 1 forwards;
+}
+
+@keyframes overflow-hidden {
+  0% {
+    overflow: hidden;
+  }
+  90% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+
+@keyframes overflow-x-hidden {
+  0% {
+    overflow-x: visible;
+  }
+  90% {
+    overflow-x: visible;
+  }
+  100% {
+    overflow-x: hidden;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------ INTRO ------------------------------------ */
+/* ------------------------------------------------------------------------------- */
+
 
 
 .container {
@@ -114,6 +148,13 @@ body {
     display: none;
   }
 }
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------ MAIN ------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
 
 
 
@@ -243,7 +284,7 @@ main {
 }
 
 .lista-perfil {
-  width: 23vw;
+  width: 25vw;
   list-style-type: none;
   text-align: center;
   visibility: hidden;
@@ -383,4 +424,151 @@ main {
   box-shadow: 12px 12px 16px 0 #00000030 inset,
               -8px -8px 12px 0 #ffffff25 inset,
               12px 12px 16px #aeaec0;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* ----------------------------------- NAV BAR ----------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+.separador {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(90deg, rgba(241,241,241,1) 13%, rgba(244,244,244,1) 40%, rgba(237,237,237,1) 66%, rgba(249,249,249,1) 85%);
+}
+
+.contenedor-navbar {
+  width: 100%;
+  height: 15vh;
+  background-color: #10101095;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link-contacto {
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  transition: all 1.2s ease;
+}
+
+.link-contacto:hover {
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  transform: scale(1.02);
+  text-shadow: 0 0 0.1rem #ffffff;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------ CARDS ------------------------------------ */
+/* ------------------------------------------------------------------------------- */
+
+
+.titulo-mis-proyectos {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(90deg, rgba(241,241,241,1) 13%, rgba(244,244,244,1) 40%, rgba(237,237,237,1) 66%, rgba(249,249,249,1) 85%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.titulo-mis-proyectos h2 {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sector-cards {
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(90deg, rgba(241,241,241,1) 13%, rgba(244,244,244,1) 40%, rgba(237,237,237,1) 66%, rgba(249,249,249,1) 85%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 25vw;
+  height: 60vh;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow:  20px 20px 15px #878787,
+               0 0 0 #ffffff,
+               0 0 0 #cccccc inset,
+               5px 5px 5px #ffffff inset;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.titulo-card {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.link-imagen-card {
+  width: 100%;
+  height: 80%;
+  transition: all 0.5s ease;
+}
+
+.link-imagen-card:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.imagen-card {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-arriba-card {
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.contenedor-abajo-card {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.descripcion-card {
+  text-align: justify;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.fecha-card {
+  width: 100%;
+  text-align: right;
+  color: #2a2a2a90;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
 }
