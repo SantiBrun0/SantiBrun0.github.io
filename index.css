@@ -459,14 +459,14 @@ main {
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  transition: all 1.2s ease;
+  transition: all 0.75s ease;
 }
 
 .link-contacto:hover {
   cursor: pointer;
-  letter-spacing: 0.2rem;
-  transform: scale(1.02);
-  text-shadow: 0 0 0.1rem #ffffff;
+  letter-spacing: 0.15rem;
+  transform: scale(1.015);
+  text-shadow: 0 0 0.05rem #eaeaea;
 }
 
 
