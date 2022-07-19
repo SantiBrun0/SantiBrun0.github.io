@@ -182,7 +182,7 @@ main {
                0 0 0 #ffffff,
                0 0 0 #cccccc inset,
                5px 5px 5px #ffffff inset;
-  animation: animacion-aside 2s 11s 1 ease;
+  animation: animacion-aside 2s 11s 1 ease forwards;
   z-index: 10;
 }
 
@@ -200,7 +200,7 @@ main {
                0 0 0 #ffffff,
                0 0 0 #cccccc inset,
                5px 5px 5px #ffffff inset;
-  animation: animacion-main-section 2s 11s 1 ease;
+  animation: animacion-main-section 2s 11s 1 ease forwards;
   z-index: 10;
 }
 
@@ -642,7 +642,9 @@ main {
 .main-aside {
   width: 80vw;
   height: 70vh;
-  animation: animacion-aside-mobile 2s 11s 1 ease;
+  position: absolute;
+  top: 15vh;
+  animation: animacion-aside-mobile 2s 11s 1 ease forwards;
 }
 
 @keyframes animacion-aside-mobile {
