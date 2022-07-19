@@ -640,52 +640,28 @@ main {
 }
 
 .main-aside {
-  width: 80vw;
+  width: 75vw;
   height: 70vh;
-  position: absolute;
-  top: 15vh;
+  top: 18vh;
   animation: animacion-aside-mobile 2s 11s 1 ease forwards;
 }
 
 @keyframes animacion-aside-mobile {
   0% {
-    width: 80vw;
+    width: 75vw;
     height: 10vh;
     transform: translateY(-90vh);
   }
   30% {
-    width: 80vw;
+    width: 75vw;
     height: 10vh;
   }
   100% {
-    width: 80vw;
+    width: 75vw;
     height: 70vh;
   }
 }
 
-@keyframes aparece-elemento {
-  0% {
-    visibility: visible;
-    opacity: 0%;
-  }
-  100% {
-    visibility: visible;
-    opacity: 100%;
-  }
-}
-
-@keyframes desaparece-elemento {
-  0% {
-    opacity: 100%;
-  }
-  90% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-    display: none;
-  }
-}
 
 .contenedor-foto-y-nombre {
   width: 90%;
