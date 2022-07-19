@@ -644,6 +644,7 @@ main {
   height: 70vh;
   top: 18vh;
   animation: animacion-aside-mobile 2s 11s 1 ease forwards;
+  -webkit-animation: animacion-aside-mobile 2s 11s 1 ease forwards;
 }
 
 @keyframes animacion-aside-mobile {
