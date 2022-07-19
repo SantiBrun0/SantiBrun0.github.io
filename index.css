@@ -641,7 +641,7 @@ main {
 
 .main-aside {
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   animation: animacion-aside-mobile 2s 11s 1 ease;
 }
 
@@ -657,7 +657,31 @@ main {
   }
   100% {
     width: 80vw;
-    height: 80vh;
+    height: 70vh;
+  }
+}
+
+@keyframes aparece-elemento {
+  0% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+@keyframes desaparece-elemento {
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+    display: none;
   }
 }
 
@@ -665,6 +689,7 @@ main {
   width: 90%;
   height: 40%;
   margin: 0px 0px 25px;
+  animation: aparece-elemento 3s 13s ease forwards;
 }
 
 .foto-perfil {
@@ -674,17 +699,23 @@ main {
 
 .lista-perfil {
   width: 75%;
+  animation: aparece-elemento 3s 14s ease forwards;
 }
 
 .sector-botones {
   width: 95%;
   margin-top: 40px;
+  animation: aparece-elemento 3s 15s ease forwards;
 }
 
 .contenedor-boton {
   width: fit-content;
   height: fit-content;
   margin: 0px 2px;
+}
+
+.contenedor-boton a {
+  color: #070707;
 }
 
 .separador {
