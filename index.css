@@ -642,22 +642,28 @@ main {
 .main-aside {
   width: 75vw;
   height: 70vh;
-  top: 18vh;
+  top: 25vh;
   animation: animacion-aside-mobile 2s 11s 1 ease forwards;
-  -webkit-animation: animacion-aside-mobile 2s 11s 1 ease forwards;
+  -webkit-animation: animacion-aside-mobile 2.5s 11s 1 ease forwards;
 }
 
 @keyframes animacion-aside-mobile {
   0% {
+    visibility: hidden;
+    transform: translateX(-450px);
+  }
+  10% {
+    visibility: visible;
     width: 75vw;
     height: 10vh;
-    transform: translateY(-90vh);
   }
   30% {
+    visibility: visible;
     width: 75vw;
     height: 10vh;
   }
   100% {
+    visibility: visible;
     width: 75vw;
     height: 70vh;
   }
